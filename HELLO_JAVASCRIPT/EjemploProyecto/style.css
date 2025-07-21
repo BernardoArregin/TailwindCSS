@@ -1,0 +1,170 @@
+body {
+            margin: 0;
+            font-family: cursive, sans-serif;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        header {
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+            background-color: #3d5a40;
+            color: white;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            z-index: 1000;
+        }
+        header img {
+            height: 70px;
+            margin-right: 20px;
+        }
+        nav {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            font-family: 'PLayfair Display', serif;
+            transition: color 0.3s;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 100px);
+            background-image: url(https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.turismoruraluy.com%2Fproduct-page%2Fchacra-gourmet&psig=AOvVaw2a4IZDuzv4enbROtVfnYES&ust=1749394152763000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKjAv5rH340DFQAAAAAdAAAAABAE);
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            position: relative;
+            z-index: 1;
+        }
+        .login-box {
+            display: flex;
+            width: 700px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.3);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            z-index: 2;
+        }
+        .login-form {
+            flex: 1;
+            background-color: #fff0c9;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-right: 1px solid #ddd;
+            position: relative;
+            z-index: 3;
+            box-sizing: border-box;
+            height: 100%;
+            overflow-y: auto;
+            background-image: url('https://i.imgur.com/8Z5k1bH.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(5px);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            color: #333;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+        .login-form h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #3d5a40;
+        }
+        .login-form label {
+            display: block;
+            margin: 10px 0 5px;
+            color: #3d5a40;
+            font-weight: bold;
+        }
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: none;
+            background-color: #1c1c1c;
+            color: white;
+            border-radius: 5px;
+            box-sizing: border-box;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .login-form button {
+            width: 100%;
+            padding: 10px;
+            background-color: #1c1c1c;
+            color: white;
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        .login-form .social-login {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .social-login button {
+            margin: 5px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.3s ease;
+        }
+        .right-box {
+            flex: 1;
+            background-color: black;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            position: relative;
+            z-index: 3;
+        }
+        .right-box img {
+            height: 120px;
+            margin-bottom: 10px;
+        }
+        .right-box button {
+            background-color: white;
+            color: black;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .flames {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            height: 60px;
+            background: url('https://i.imgur.com/fpT6bRj.png') repeat-x;
+            background-size: contain;
+            animation: flames 1s linear infinite;
+        }

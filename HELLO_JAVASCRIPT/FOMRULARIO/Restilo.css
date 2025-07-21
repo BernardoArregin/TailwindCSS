@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e8f0fe;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register-container {
+    background-color: #ffffff;
+    padding: 35px 45px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+    max-width: 420px;
+    width: 100%;
+}
+
+.register-container h2 {
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2rem;
+    color: black;
+}
+
+.register-form label {
+    font-weight: 600;
+    color: black;
+}
+
+.register-form input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.register-form input:focus {
+    border-color: black;
+}
+
+.register-form button, .login-btn {
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #1e40af;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+}
+
+.login-btn:hover {
+    background-color: #1d4ed8;
+}
+.Register-btn{
+    display: block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #1e40af;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    text-decoration: none;
+    text-align: center;
+
+}

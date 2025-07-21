@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AntiGordas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            margin: 50px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            display: inline-block;
+        }
+        #alertaImagen {
+            display: none;
+            margin-top: 20px;
+        }
+        #alertaImagen img {
+            width: 150px;
+            transition: transform 1s linear;
+        }
+        .botones {
+            margin: 10px 0;
+        }
+        button {
+            padding: 10px 15px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            background-color: #007BFF;
+            color: white;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        audio.container {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Peso</h2>
+        <div class="botones">
+            <button onclick="seleccionarGenero('Masculino')">Masculino</button>
+            <button onclick="seleccionarGenero('Femenino')">Femenino</button>
+        </div>
+        <label for="peso">Ingrese su peso en kg:</label>
+        <input type="number" id="peso" min="1">
+        <button onclick="verificarPeso()">Verificar</button>
+        
+        <div id="alertaImagen">
+            <img id="imagenRotar" src="ggg.jpeg" alt="Alerta de Peso">
+        </div>
+    
+        <div class="audio-container">
+            <audio id="musica" controls autoplay loop>
+                <source src="Oye gelda lo más escuchado.mp3" alt="Alerta de Peso">
+            </audio>
+        </div>
+
+    <script>
+        let generoSeleccionado = '';
+
+        function seleccionarGenero(genero) {
+            generoSeleccionado = genero;
+            alert("Seleccionaste: " + genero);
+        }
+
+        function verificarPeso() {
+            let peso = document.getElementById("peso").value;
+            let alertaImagen = document.getElementById("alertaImagen");
+            let imagenRotar = document.getElementById("imagenRotar");
+            let musica = document.getElementById("musica");
+          
+            if (peso >= 105) {
+                alertaImagen.style.display = "block";
+                imagenRotar.style.transform = "rotate(360deg)"
+                musica.play();
+            } else {
+                alertaImagen.style.display = "none";
+                imagenRotar.style.transform ="none";
+                musica.pause();
+                musica.currentTime =0;
+            }
+        }
+    </script>
+</body>
+</html>

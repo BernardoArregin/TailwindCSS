@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+        }
+        header, footer {
+            width: 100%;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            margin: 20px 0;
+            flex: 1;
+            gap: 20px;
+            /* flex-wrap: wrap;  posible adaptación móvil*/
+        }
+        aside {
+            width: 30%;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+        main {
+            width: 70%;
+            background-color: #ddd;
+            padding: 20px;
+        }
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            width: 100%
+        }
+        footer{
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+    <header>
+        <h1>Encabezado</h1>
+    </header>
+    <div class="container">
+        <aside>
+            <h2>Aside</h2>
+            <p>Contenido del aside.</p>
+        </aside>
+        <main>
+            <h2>Main</h2>
+            <p>Contenido principal de la página.</p>
+        </main>
+    </div>
+        <footer>
+        <p>Pie de página</p>
+        </footer>
+    </div>
+</body>
+</html>

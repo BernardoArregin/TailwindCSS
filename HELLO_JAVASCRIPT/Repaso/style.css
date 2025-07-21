@@ -1,0 +1,8 @@
+h1 {
+    color: darkslategray;
+    text-align: center;
+}
+
+h1:hover {
+    color: cornflowerblue;
+}

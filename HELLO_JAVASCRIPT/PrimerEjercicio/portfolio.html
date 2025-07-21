@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #a5c9e8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 30px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .profile-image {
+            border-radius: 50%;
+            width: 130px;
+            height: 130px;
+            object-fit: cover;
+            margin-right: 25px;
+            border: 3px solid #ccc;
+        }
+
+        .info h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            color: #222;
+        }
+
+        .info p {
+            margin: 6px 0;
+        }
+
+        .section {
+            margin-top: 30px;
+        }
+
+        .section h2 {
+            font-size: 1.6rem;
+            color: #333;
+            border-bottom: 2px solid #bbb;
+            padding-bottom: 6px;
+            margin-bottom: 15px;
+        }
+
+        .skills ul {
+            list-style-type: none;
+            padding-left: 0;
+        }
+
+        .skills li {
+            background-color: #e3f1ff;
+            color: #333;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 6px;
+            transition: background-color 0,3s ease;
+        }
+
+        .skills li:hover {
+            background-color: #d0e7ff;
+        }
+
+        @media (max-width: 600px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .profile-image {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+          <img src="Img.jpeg" alt="Foto de perfil de Bernardo Arregin" class="profile-image" />
+          <div class="info">
+            <h1>Bernardo Arregin</h1>
+            <p>Desarrollador Full Stack</p>
+            <p>Apasionado por la tecnología y el desarrollo web (Frontend & Backend).</p>
+            <p><strong>Ubicación:</strong> Bella Unión, Artigas, Uruguay</p>
+            <p><strong>Email:</strong> arreginbernardo@gmail.com</p>
+            <p><strong>Teléfono:</strong> +598 97 314 508</p>
+          </div>
+        </div>
+    
+        <div class="section skills">
+          <h2>Habilidades</h2>
+          <ul>
+            <li>HTML, CSS y JavaScript (Nivel básico)</li>
+            <li>Desarrollo Backend con Python</li>
+            <li>Bases de datos relacionales (MySQL)</li>
+          </ul>
+        </div>
+    
+        <div class="section about">
+          <h2>Información Personal</h2>
+          <p>
+            Mi nombre es Bernardo Arregin y actualmente me encuentro estudiando programación. Tengo experiencia básica en diseño web utilizando HTML y CSS, y conocimientos iniciales en JavaScript. Estoy en constante aprendizaje y apasionado por mejorar cada día en el mundo del desarrollo.
+          </p>
+        </div>
+      </div>
+</body>
+</html>
